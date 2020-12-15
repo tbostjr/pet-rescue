@@ -1,0 +1,108 @@
+[
+    {
+	"image": "pittbull-1.jpg",
+	"name": "Loki",
+	"age": 84,
+	"animal": "dog",
+	"breed": "Pittbull",
+	"description": "A very nice dog. Good with people is used to. Good with children it knows. Give roughly one week of break in period."
+    },
+    {
+        "image": "pittbull-2.jpg",
+        "name": "Betty",
+        "age": 60,
+        "breed": "Pittbull",
+        "description": "A very loving female Pittbull. Not a hostile bone in her body."
+    },
+    {
+        "image": "pittbull-3.jpg",
+        "name": "Shey",
+        "age": 6,
+        "breed": "Pittbull",
+        "description": "Little puppy looking for home"
+    },
+    {
+        "image": "cat-1.jpg",
+        "name": "Tabby",
+        "age": 30,
+        "breed": "Cat",
+        "description": "Orange cat , likes milk and naps"
+    },
+    {
+        "image": "cat-2.jpg",
+        "name": "Puff",
+        "age": 5,
+        "breed": "Cat",
+        "description": "Fluffy kitten"
+    },
+    {
+        "image": "cat-3.jpg",
+        "name": "Mary",
+        "age": 40,
+        "breed": "Cat",
+        "description": "Pampered kitten"
+    },
+    {
+        "image": "parrot-1.jpg",
+        "name": "Jeff",
+        "age": 12,
+        "breed": "parakeet",
+        "description": "Very colorful bird.. in both exterior and vocabulary."
+    },
+    
+    {
+        "image": "parrot-2.jpg",
+        "name": "Peach",
+        "age": 22,
+        "breed": "parakeet",
+        "description": "Peachy little parrot"
+    },
+    
+    {
+        "image": "rottweiler-1.jpg",
+        "name": "Max",
+        "age": 80,
+        "breed": "Rottweiler",
+        "description": "Old seasoned guard dog"
+    },
+    
+    {
+        "image": "rottweiler-2.jpg",
+        "name": "Berry",
+        "age": 45,
+        "breed": "Rottweiler",
+        "description": "Black berry is his nickname"
+    },
+    
+    {
+        "image": "rottweiler-3.jpg",
+        "name": "Daisy",
+        "age": 3,
+        "breed": "Rottweiler",
+        "description": "Baby pup"
+    },
+    
+    {
+        "image": "pittbull-4.jpg",
+        "name": "Snow",
+        "age": 55,
+        "breed": "Pittbull",
+        "description": "A white doggy doge"
+    },
+    
+    {
+        "image": "tortoise-1.jpg",
+        "name": "Turt",
+        "age": 36,
+        "breed": "tortoise",
+        "description": "Baby tort"
+    },
+    
+    {
+        "image": "tortoise-2.jpg",
+        "name": "Albert Einstein",
+        "age": 660,
+        "breed": "tortoise",
+        "description": "A old man, but he still got it."
+    }
+]

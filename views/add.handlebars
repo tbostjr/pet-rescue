@@ -1,0 +1,47 @@
+<main class="container">
+    <h1 class="text-center mt-5">Add a pet for adoption</h1>
+
+    <div   class="d-flex justify-content-center">
+        <div id="spinner" style="display: none;" class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    
+    <form id="addAnimal" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Name</label>
+            <input id="name" name="name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Age (in months)</label>
+            <input id="age" name="age" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Animal</label>
+            <select id="animal" name="animal" class="form-control">
+                {{> select-option animals}}
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Breed</label>
+            <select id="breed" name="breed" class="form-control">
+                {{> select-option breeds}}
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Image</label>
+            <input type="file" name="image" class="">
+        </div>
+        <img id="img-preview" src="">
+        <div class="form-group">
+            <label>Description</label>
+            <textarea id="description" name="description" class="form-control" rows=20></textarea>
+        </div>
+        <button id="addAnimalBtn" type="submit" class="btn btn-primary">Add Animal</button>
+        <button class="btn btn-primary" type="reset">Clear</button>
+        <p id="error" class="text-danger"></p>
+    </form>
+
+    <h1 id="success" style="display: none;" class="text-success text-center">Animal successfully added!! <a href="/">Go
+            to main page</a> to find them.</h1>
+</main>

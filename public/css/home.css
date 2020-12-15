@@ -1,0 +1,11 @@
+
+#dropdowns{
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-group-text{
+    width: 90px;
+}
+select{
+    width: 70px;
+}

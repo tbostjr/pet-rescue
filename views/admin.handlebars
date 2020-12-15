@@ -1,0 +1,67 @@
+<main class="container">
+    
+    <div  id="modal-delete" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                </div>
+                <div class="modal-body">
+                    <p class="text-danger"></p>
+                    <p hidden class="info"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary modal-confirm">Yes</button>
+                    <button type="button" class="btn btn-secondary modal-deny" data-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div  id="modal-error" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary modal-deny" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="d-flex justify-content-center mt-5">
+        <a class="btn-lg btn-primary rounded " href="/admin/add">Add Pet</a>
+    </div>
+
+    <div id="table" class="mt-5">
+        <div class="row bg-primary text-white">
+            <div class="col-2 ">Name</div>
+            <div class="col-4">Age</div>
+            <div class="col-2 ">Animal</div>
+            <div class="col-3">Breed</div>
+            <div class="col-1 ">
+            </div>
+        </div>
+        {{#each animals}}
+        <div class="row">
+            <div class="col-2 ">{{name}}</div>
+            <div class="col-4 bg-secondary">{{formatAge age}}</div>
+            <div class="col-2 ">{{animal}}</div>
+            <div class="col-3 bg-secondary">{{breed}}</div>
+            <div class="col-1 ">
+                <a href="/admin/edit/{{_id}}" class="btn btn-info rounded"><i class="fas fa-edit"></i></a>
+                <a href="/api/animal/admin/delete/{{_id}}" class="btn btn-danger rounded deleteBtn"><i class="fas fa-trash-alt"></i></a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+</main>

@@ -1,0 +1,81 @@
+<main>
+    <div class="search-controls container mt-5">
+        <h2 class="text-center text-primary">Search Our Animals</h2>
+        <form id="search" action="/" method="GET">
+            <div class="control-group">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend ">
+                        <span class="input-group-text" id="basic-addon1">Search</span>
+                    </div>
+                    <input id="search" name="search" type="text" class="form-control" placeholder="search..."
+                        value="{{search}}">
+                    <button class="input-group-append btn btn-primary" type="search"><i
+                            class="fas fa-search mt-1"></i></button>
+                    <a href="/" class="btn btn-primary">Clear</a>
+                </div>
+            </div>
+            <div id="dropdowns">
+                <div class="control-group m-1">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend ">
+                            <span class="input-group-text bg-primary text-white" id="basic-addon1">Animal</span>
+                        </div>
+                        <select id="animal" name="animal" class="form-control">
+                            {{> select-option animals}}
+                        </select>
+                    </div>
+                </div>
+                <div class="control-group m-1">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend ">
+                            <span class="input-group-text bg-primary text-white" id="basic-addon1">Breed</span>
+                        </div>
+                        <select id="breed" name="breed" class="form-control">
+                            {{> select-option breeds}}
+                        </select>
+                    </div>
+                </div>
+                <div class="control-group m-1">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend ">
+                            <span class="input-group-text bg-primary text-white" id="basic-addon1">Age Range</span>
+                        </div>
+                        <select id="age" name="age" class="form-control">
+                            {{> select-option ages}}
+                        </select>
+                    </div>
+                </div>
+                <div class="control-group m-1">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend ">
+                            <span class="input-group-text bg-primary text-white" id="basic-addon1">Sort By</span>
+                        </div>
+                        <select id="sort" name="sort" class="form-control">
+                            {{> select-option sorts}}
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div id="animal-listings">
+        <div class="row p-5">
+            {{#each results}}
+            <div id="{{_id}}" class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="card mt-3 mb-3" style="width: 18rem; height: 32rem;">
+                    <img class="card-img-top" src="/images/{{image}}" alt="{{alt}}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{name}}</h5>
+                        <p class="card-text">({{animal}}) {{breed}} {{formatAge age}} old</p>
+                        <a href="/animal/{{_id}}" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+
+            {{/each}}
+
+        </div>
+    </div>
+</main>

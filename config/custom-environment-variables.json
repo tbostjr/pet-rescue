@@ -1,0 +1,25 @@
+{
+    "debug": "DEBUG",
+    "http": {
+        "hostname": "HOSTNAME",
+        "port": "PORT"
+    },
+    "db": {
+        "url": "DB_URL",
+        "name": "DB_NAME",
+        "poolSize": "DB_POOL"
+    },
+    "auth":{
+        "saltRounds": "SALT_ROUNDS",
+        "secret": "SECRET"
+    },
+    "sendgrid":{
+        "apiKey": "SENDGRID_API_KEY",
+        "from": "SENDGRID_FROM",
+        "to": "SENDGRID_TO",
+        "secret": "SENDGRID_SECRET",
+        "templates": {
+            "contactSubmission": "  SENDGRID_CONTACT_SUBMISSION"
+        }
+    }
+}

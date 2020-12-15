@@ -1,0 +1,8 @@
+{
+    "sendgrid":{
+        "apiKey": "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",
+        "from": "tj.bost.official@gmail.com",
+        "to": "tj.bost.official@gmail.com",
+        "secret": "emailSecret"
+    }
+}

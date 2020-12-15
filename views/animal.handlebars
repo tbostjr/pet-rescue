@@ -1,0 +1,23 @@
+<main class="mb-5">
+    {{#with animal}}
+        <nav class="container mb-5" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">{{animal}}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{name}}</li>
+            </ol>
+            <a href="/animal/adopt/{{_id}}" class="btn btn-primary">Adopt {{name}}!</a>
+        </nav>
+    
+    <div class="d-flex container">
+        <div>
+            <img src="/images/{{image}}" alt="{{alt}}">
+        </div>
+        <div class="text-center">
+            <h2 class="display-4 text-primary">{{name}} the {{breed}}</h2>
+            <div class="h4">{{formatAge age}} old</div>
+            <div class="">{{description}}</div>
+        </div>
+    </div>
+    {{/with}}
+</main>
